@@ -170,6 +170,7 @@ def take_photo():
     pass
 
 def calculate_result():
+
     pass  # Replace with code to calculate the result
 
 # Assume we have a list of tools to process
