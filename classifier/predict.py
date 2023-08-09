@@ -87,11 +87,12 @@ def create_states_arr(predictions, path_list, is_verify=False):
         else:
             res = int(np.argmax(predictions[prediction]))
         print(res)
-        if res > 1: 
+        if res > 1: # Fix result add the number two to the results # If bigger than two the state is nachschleifen
             print("Warning, result value is not in range 0-1")
             print("Predictions output: ")
             print(predictions[prediction])
-        if res > 0 :
+            state = 'nachschleifen'
+        elif res > 0 :
             state = 'schlecht'
         res = dict({
             'tool': path_list[prediction],
