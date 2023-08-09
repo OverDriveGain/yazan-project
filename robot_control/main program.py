@@ -16,7 +16,7 @@ import robot_control as rc
 # Grab 1 image and save to output_images
 # turn tool                                 ) repeat 7 times
 # Grab 1 image and save to output_images    )
-# predict image list
+# predict image list ( If one of the pictures is schlecht, all are schlecht)
 # put tool away
 # calculate result
 # show result in GUI
